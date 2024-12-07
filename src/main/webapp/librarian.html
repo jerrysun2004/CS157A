@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Librarian Dashboard</title>
+</head>
+<body>
+    <h1>Librarian Dashboard</h1>
+    <form action="AddBookServlet" method="POST">
+        <h2>Add a New Book</h2>
+        <label for="title">Book Title:</label>
+        <input type="text" id="title" name="title" required><br>
+        <input type="submit" value="Add Book">
+    </form>
+
+    <h2>Books in Library</h2>
+    <iframe src="DisplayBooksServlet" style="width:100%; height:300px;"></iframe>
+
+    <p><a href="index.html">Back to Login</a></p>
+</body>
+</html>

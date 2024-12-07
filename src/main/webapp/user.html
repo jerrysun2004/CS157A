@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to the Library User Dashboard</h1>
+    
+    <h2>Available Books</h2>
+    <iframe src="DisplayBooksServlet" style="width:100%; height:300px;"></iframe>
+    
+    <h2>Borrow a Book</h2>
+    <form action="ReturnBookServlet" method="POST">
+        <label for="bookID">Book ID to Return:</label>
+        <input type="number" id="bookID" name="bookID" required><br>
+        <input type="submit" value="Return Book">
+    </form>
+    
+    <a href="index.html">Back to Login</a>
+</body>
+</html>
